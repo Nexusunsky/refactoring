@@ -15,3 +15,13 @@ target
 datanucleus.log
 /bin/
 *.log
+.gradle/3.5/file-changes/last-build.bin
+.gradle/3.5/fileContent/fileContent.lock
+.gradle/3.5/taskHistory/fileHashes.bin
+.gradle/3.5/taskHistory/fileSnapshots.bin
+.gradle/3.5/taskHistory/taskHistory.bin
+.gradle/3.5/taskHistory/taskHistory.lock
+.gradle/buildOutputCleanup/built.bin
+.gradle/buildOutputCleanup/cache.properties
+.gradle/buildOutputCleanup/cache.properties.lock
+build/tmp/jar/MANIFEST.MF

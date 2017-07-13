@@ -47,6 +47,7 @@ public class Customer {
                     }
                     break;
             }
+
             // add frequent renter points
             frequentRenterPoints++;
             // add bonus for a two day new release rental
@@ -55,6 +56,7 @@ public class Customer {
 
             // show figures for this rental
             result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(thisAmount) + "\n";
+            totalAmount += thisAmount;
         }
         // add footer lines
         result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
