@@ -25,3 +25,12 @@ datanucleus.log
 .gradle/buildOutputCleanup/cache.properties
 .gradle/buildOutputCleanup/cache.properties.lock
 build/tmp/jar/MANIFEST.MF
+annotation-processors.bin
+.gradle/3.5/taskHistory/jvmClassSignatures.bin
+build/reports/tests/test/index.html
+build/reports/tests/test/css/base-style.css
+build/reports/tests/test/css/style.css
+build/reports/tests/test/js/report.js
+build/test-results/test/binary/output.bin
+build/test-results/test/binary/output.bin.idx
+build/test-results/test/binary/results.bin

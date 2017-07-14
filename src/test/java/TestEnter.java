@@ -1,3 +1,6 @@
+import price.ChildrensPrice;
+import price.NewReleasePrice;
+
 /**
  * 程序测试入口
  *
@@ -6,9 +9,9 @@
 public class TestEnter {
     public static void main(String args[]) {
         Customer liuHao = new Customer("LiuHao");
-        Movie transformers = new Movie("Transformers", Movie.NEW_RELEASE);
-        Movie myBoy = new Movie("MyBoy", Movie.NEW_RELEASE);
-        Movie beauty = new Movie("Beauty", Movie.CHILDRENS);
+        Movie transformers = new Movie("Transformers", new NewReleasePrice());
+        Movie myBoy = new Movie("MyBoy", new NewReleasePrice());
+        Movie beauty = new Movie("Beauty", new ChildrensPrice());
         Rental t1 = new Rental(transformers, 3);
         Rental t2 = new Rental(myBoy, 4);
         Rental t3 = new Rental(beauty, 5);

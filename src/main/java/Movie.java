@@ -1,32 +1,29 @@
-/***
+import price.Price;
+
+/**
  * @author: Nexusunsky on 17/7/12 16:59
  */
 public class Movie {
-    public static final int CHILDRENS = 2;
-    public static final int REGULAR = 0;
-    public static final int NEW_RELEASE = 1;
 
-    private String title;
-    private int priceCode;
+    private String mTitle;
+    private int mPriceCode;
+    private Price mPrice;
 
-    public Movie(String title, int priceCode) {
-        this.title = title;
-        this.priceCode = priceCode;
+    public Movie(String title, Price price) {
+        this.mTitle = title;
+        this.mPrice = price;
+        this.mPriceCode = price.getPriceCode();
     }
 
     public String getTitle() {
-        return title;
+        return mTitle;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public double eachPrice(int daysRented) {
+        return mPrice.eachPrice(daysRented);
     }
 
-    public int getPriceCode() {
-        return priceCode;
-    }
-
-    public void setPriceCode(int priceCode) {
-        this.priceCode = priceCode;
+    public int eachPoint(int daysRented) {
+        return mPrice.eachPoint(daysRented);
     }
 }
